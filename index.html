@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bcbf1b3344.js" crossorigin="anonymous"></script>
+
+
+    <title>Pomodoro Study Timer</title>
+</head>
+<body>
+
+    <main>
+        <h1>Pomodoro Study Timer</h1>
+
+        <div class="timerContainer">
+            <div class="timers">
+            <div id="containerRight">            
+                <h2 class="timer" id="studyTimer">Study Duration</h2>
+        
+                <div class="display" id="studyDisplay">
+                25:00</div>
+
+       
+
+                <div class="buttons">
+                    <button class="minusFive" id="studyMinusFive">- 5</button>
+                    <button class="plusFive" id="studyPlusFive">+ 5</button>
+                </div>
+            </div>       
+
+        <div id="containerLeft">            
+            <h2 class="timer" id="breakTimer">Break Duration</h2>
+
+            <div class="display" id="breakDisplay">
+            05:00</div>
+
+
+            <div class="buttons">
+                <button class="minusFive" id="breakMinusFive">- 5</button>
+                <button class="plusFive" id="breakPlusFive">+ 5</button>
+            </div>
+        </div>
+
+            </div>
+        
+        <div class="loop">
+            <h3>Loop?</h3>
+            <input type="checkbox" id="myCheck" onclick="loopOnOff()">
+ 
+            <p id="text" style="display:none">Loop Engaged!</p>  
+        </div>
+
+        <div class="startStop">
+            <button id="stop">Stop</button>
+            <button id="start">Start</button>
+        </div>
+        <div>
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+
+
+
+    </main>
+
+    <script src="pomodoro.js"></script>
+    
+</body>
+</html>
